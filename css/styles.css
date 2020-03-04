@@ -1,13 +1,82 @@
-.top-container{
-  background-color: #C6F7FB;
+body {
+  max-width: 980px;
+  margin: auto;
 }
 
-h1,h2,h3,#contact {
-  font-family: 'Concert One',іsans-serif ;
+.top-container {
+  background-color: #C6F7FB;
+  position: relative;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.top-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.big-logo {
+  position: absolute;
+  left: 328px;
+  top: 23px;
+}
+
+.top-container h1 {
+  position: absolute;
+  left: 384px;
+  top: 110px;
+}
+
+.cloud1 {
+  position: absolute;
+  right: 100px;
+  transition: all 1s ease-in-out;
+}
+
+.cloud2 {
+  position: absolute;
+  left: 80px;
+  top: 128px;
+  transition: all 1s ease-in-out;
+}
+
+.bird1 {
+  position: absolute;
+  left: 242px;
+  top: 288px;
+}
+
+h1, h2, h3, #contact, label {
+  font-family: 'Concert One', іsans-serif;
   color: #4AB19A;
 }
 
 p {
-  font-family: 'Concert One',іsans-serif ;
-  color:black;
+  font-family: 'Concert One', іsans-serif;
+  color: black;
+}
+
+.stroke-icon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+#services {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.stroke-icon .services-article img {
+  display: block;
+  margin: auto auto;
+}
+
+@media (max-width:900px) {
+  .stroke-icon {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
