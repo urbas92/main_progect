@@ -7,10 +7,13 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5c423c1e68.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
 <body>
+
   <section id="top">
     <header>
       <div class="top-container">
@@ -18,35 +21,35 @@
         <h1>web developer studio.</h1>
         <img class="cloud1" src="img/cloud.svg" alt="cloud">
         <img class="cloud2" src="img/cloud.svg" alt="cloud2">
-        <img class="bird1" src="img/bird1.svg" alt="bird">
         <div id="earth-holder">
           <img src="img/land.svg" alt="land">
         </div>
-
       </div>
     </header>
   </section>
+
+
   <section id="services">
     <h1>SERVICES</h1>
     <h2>We can get you where you want to be</h2>
     <hr>
-    <div class="stroke-icon">
-      <article class="services-article">
+    <div class="row">
+      <article class="col-xl-3">
         <img src="img/stroke-icons-01.png" alt="rocket">
         <h3>SUPER FAST</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Etiam nec iaculis ligula, sit amet hendrerit est. Nullam vel. </p>
       </article>
-      <article class="services-article">
+      <article class="col-xl-3">
         <img src="img/stroke-icons-02.png" alt="eye">
         <h3>SUPER FAST</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Etiam nec iaculis ligula, sit amet hendrerit est. Nullam vel. </p>
       </article>
-      <article class="services-article">
+      <article class="col-xl-3">
         <img src="img/stroke-icons-03.png" alt="code">
         <h3>SUPER FAST</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Etiam nec iaculis ligula, sit amet hendrerit est. Nullam vel. </p>
       </article>
-      <article class="services-article">
+      <article class="col-xl-3">
         <img src="img/stroke-icons-04.png" alt="phone">
         <h3>SUPER FAST</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Etiam nec iaculis ligula, sit amet hendrerit est. Nullam vel. </p>
@@ -55,54 +58,80 @@
     <img class="bird2" src="img/bird2.svg" alt="bird2">
   </section>
   <section id="portfolio">
+
     <h1>PORTFOLIO</h1>
     <h3>We are very proud to show it off</h3>
     <div class="portfolio-img">
-      <img src="img/bird3.svg" alt="bird3">
-      <img src="img/portfolio-img/portfolio-img-01.jpg" alt="portfolio-img">
-      <img src="img/portfolio-img/portfolio-img-02.jpg" alt="portfolio-img">
-      <img src="img/portfolio-img/portfolio-img-03.jpg" alt="portfolio-img">
-      <img src="img/portfolio-img/portfolio-img-04.jpg" alt="portfolio-img">
-      <img src="img/portfolio-img/portfolio-img-05.jpg" alt="portfolio-img">
-      <img src="img/portfolio-img/portfolio-img-06.jpg" alt="portfolio-img">
-      <img src="img/town-view.svg" alt="town-view">
+      <div class="row">
+        <img class="col" src="img/portfolio-img/portfolio-img-02.jpg" alt="portfolio-img">
+        <img class="col" src="img/portfolio-img/portfolio-img-01.jpg" alt="portfolio-img">
+        <img class="col" src="img/portfolio-img/portfolio-img-03.jpg" alt="portfolio-img">
+        <img class="col" src="img/portfolio-img/portfolio-img-04.jpg" alt="portfolio-img">
+        <img class="col" src="img/portfolio-img/portfolio-img-05.jpg" alt="portfolio-img">
+        <img class="col" src="img/portfolio-img/portfolio-img-06.jpg" alt="portfolio-img">
+      </div>
+      <div class="portfolio-bottom">
+        <img class="bird3" src="img/bird3.svg" alt="bird3">
+        <img class="town" src="img/town-view.svg" alt="town-view">
+      </div>
     </div>
   </section>
+
+
+
   <section id="contact">
     <h1>CONTACT</h1>
+    <h2>FIND US</h2>
     <img src="img/bird4.svg" alt="bird4">
-    <h2>SEND A MESSAGE</h2>
-    <form action="https://formspree.io/xqkbqoao" method="POST">
-      <label>Your name:
-        <input type="text" name="name" placeholder="name" required>
-      </label><br>
-      <label>Your email:
-        <input type="email" name="email" placeholder="email" required><br>
-      </label>
-      <label>Your message:
-        <input type="text" name="message" required><br>
-      </label>
-      <label>
-        <input type="submit" name="submit" value="SUBMIT"><br>
-      </label>
-    </form>
-    <img src="img/phone-icon.png" alt="phone-icon">
-    <img src="img/location-icon.png" alt="location-icon">
-    <img src="img/latter-icon.png" alt="latter-icon">
-    <h3>+380931313232323</h3>
-    <h3>Seattle</h3>
-    <h3>support@support.com</h3>
+    <div class="map">
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28315.88808084145!2d-122.33365921484605!3d47.60305416536071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2z0KHRltC10YLQuywg0JLQsNGI0LjQvdCz0YLQvtC9LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1584555076529!5m2!1suk!2sua"
+      width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <h1>SEND A MESSAGE</h1>
+      </div>
+      <div class="row">
+        <h4>We'd love to hear from you!</h4>
+      </div>
+      <div class="row input-container">
+        <div class="col-xs-12">
+          <div class="styled-input wide">
+            <input type="text" required />
+            <label>Name</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="styled-input">
+            <input type="text" required />
+            <label>Email</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="styled-input" style="float:right;">
+            <input type="text" required />
+            <label>Phone Number</label>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="styled-input wide">
+            <textarea required></textarea>
+            <label>Message</label>
+          </div>
+        </div>
+        <div class="col-xs-12" style="margin-left: 40%;">
+          <div class="btn btn-warning btn-lrg submit-btn">Send Message</div>
+        </div>
+      </div>
+    </div>
+
   </section>
-  <footer>
-    <a href="https://twitter.com/?lang=ru">
-      <img src="img/twitter-icon.png" alt="twitter-icon">
-    </a>
-    <a href="https://www.instagram.com/?hl=ru">
-      <img src="img/instagram-icon.png" alt="instagram-icon">
-    </a>
-    <a href="https://uk-ua.facebook.com/">
-      <img src="img/facebook-icon.png" alt="facebook-icon">
-    </a>
+  <footer id=footer>
+    <i class=" social-icon fab fa-facebook-square"></i>
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-instagram"></i>
     <hr>
     <img src="img/logo.png" alt="small-logo">
   </footer>
